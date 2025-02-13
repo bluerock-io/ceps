@@ -4,15 +4,15 @@
 
 | Strategy      | Performance    | Normalization | Arguments                 | Reduction Flags          | Refolding        | Effect on Qed                                                                          |
 |---------------|----------------|---------------|---------------------------|--------------------------|------------------|----------------------------------------------------------------------------------------|
-| vm_compute    | ➕➕➕         | Full          | ❌                         | ❌                       | ❌                | ➕➕➕ Bespoke Cast honored by Qed                                                        |
-| lazy          | ➕➕           | Full / Head   | ❌                         | ➕➕                     | ❌                | ➕➕ Default cast does not store reduction flags                                          |
-| cbv,compute   | ➕             | Full / Head   | ❌                         | ❌                       | ❌                | ➕ Default cast coincides but will use kernel reduction/conversion instead of cbv         |
+| vm_compute    | ✅✅✅         | Full          | ❌                         | ❌                       | ❌                | ✅✅✅ Bespoke Cast honored by Qed                                                        |
+| lazy          | ✅✅           | Full / Head   | ❌                         | ✅✅                     | ❌                | ✅✅ Default cast does not store reduction flags                                          |
+| cbv,compute   | ✅             | Full / Head   | ❌                         | ❌                       | ❌                | ✅ Default cast coincides but will use kernel reduction/conversion instead of cbv         |
 | hnf           | ❔             | Head          |  ❔                        |  ❔                      |  ❔               |  ❔                                                                                       |
-| simpl         | ➖➖           | Full / Head   | ➕/➖                      | ➖ (only head)           | ➕                | ➖ Uses default cast                                                                      |
-| cbn           | ➖➖➖         | Full / Head   | ➕➕                       | ➕➕                     | ➕➕              | ➖ Uses default cast                                                                      |
+| simpl         | ⛔⛔           | Full / Head   | ✅/⛔                      | ⛔ (only head)           | ✅                | ⛔ Uses default cast                                                                      |
+| cbn           | ⛔⛔⛔         | Full / Head   | ✅✅                       | ✅✅                     | ✅✅              | ⛔ Uses default cast                                                                      |
 | **Proposals** |
-| [kred](#kred) | ➕             | Full / Head   | ➕➕                       | ➕➕                     | ➕                | ➖ Uses default cast                                                                      |
-| [MSP](#msp)   | ➕➕ (= lazy)  | Any (quoting) | ❌ (not necessary)         | ❌ (not necessary)       | ❌                | ➕➕➕ Fully integrated into kernel reduction/conversion                                  |
+| [kred](#kred) | ✅             | Full / Head   | ✅✅                       | ✅✅                     | ✅                | ⛔ Uses default cast                                                                      |
+| [MSP](#msp)   | ✅✅ (= lazy)  | Any (quoting) | ❌ (not necessary)         | ❌ (not necessary)       | ❌                | ✅✅✅ Fully integrated into kernel reduction/conversion                                  |
 
 ## Details
 
