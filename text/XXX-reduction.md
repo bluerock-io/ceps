@@ -20,8 +20,8 @@
     *   Fully normalizes Rocq terms
     *   Translates Rocq terms to OCaml bytecode for efficiency
     *   Generally faster than all strategies listed below
-    *   Translation does have a cost that is offset by automatic caching of the
-        translated bytecode
+    *   Toplevel definitions have their weakly reduced values cached
+    *   Translation does have a cost that is offset by precompiling toplevel definitions
     *   Does not support `Arguments`
     *   Does not support any reduction flags (not even `head`)
     *   Does not support fixpoint refolding
