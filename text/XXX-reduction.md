@@ -7,7 +7,7 @@
 | vm_compute    | ✅✅✅         | Full          | ❌                         | ❌                       | ❌                | ✅✅✅ Bespoke Cast honored by Qed                                                        |
 | lazy          | ✅✅           | Full / Head   | ❌                         | ✅✅                     | ❌                | ✅✅ Default cast does not store reduction flags                                          |
 | cbv,compute   | ✅             | Full / Head   | ❌                         | ❌                       | ❌                | ✅ Default cast coincides but will use kernel reduction/conversion instead of cbv         |
-| hnf           | ❔             | Head          |  ❔                        |  ❔                      |  ❔               |  ❔                                                                                       |
+| hnf           | ❔             | Head          |  ❔                        |  ❌                      | ✅                |  ❔                                                                                       |
 | simpl         | ⛔⛔           | Full / Head   | ✅/⛔                      | ⛔ (only head)           | ✅                | ⛔ Uses default cast                                                                      |
 | cbn           | ⛔⛔⛔         | Full / Head   | ✅✅                       | ✅✅                     | ✅✅              | ⛔ Uses default cast                                                                      |
 | **Proposals** |
