@@ -86,7 +86,7 @@ perform changes to the shallowly embedded iris goal.
 ### Requirements
 
 *   Must only reduce computation introduced by the automation tactics
-    *   Can be addressed with whitelist reduction flags, or
+    *   Can be addressed with whitelist reduction flags, **and**
     *   by creating fresh copies of all functions used in the tactics.
     *   Both solutions are incredibly tedious and error-prone
 *   Needs a reasonably performant strategy (lazy or better)
