@@ -199,7 +199,7 @@ to blocked sub-sub-terms, etc.
 outside of run.
 
 MSP addresses the use cases [Reification with User Terms](#reif) and [Avoiding Term
- Repitition in Proof Terms](#rep) completely and drastically improves on all existing
+ Repetition in Proof Terms](#rep) completely and drastically improves on all existing
  reduction strategies in the precision it offers for reducing specific terms.
 
 ### Advantages
