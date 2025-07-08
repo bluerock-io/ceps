@@ -108,6 +108,7 @@ once in checking the type of `f` and once in checking the return type.
 ```coq
 let n := 1 + 1 in
 forall (f : Fin.t n), Fin.t n
+```
 
 Unfortunately not all values can be forced and types such as telescopes will
 produce terms of cubic size without any way to share their reduction.
